@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Noticia;
+    src: url('https://cdn.byran.tech/cdn/Noticia_Text/NoticiaText-Regular.ttf');
+}
+
+@font-face {
+    font-family: Noticia-Bold;
+    src: url('https://cdn.byran.tech/cdn/Noticia_Text/NoticiaText-Bold.ttf');
+}
+
+@font-face {
+    font-family: coromantGaramond;
+    src: url('https://cdn.byran.tech/cdn/Cormorant_Garamond/CormorantGaramond-Regular.ttf');
+}
+
+@font-face {
+    font-family: coromantGaramond-SemiBold;
+    src: url('https://cdn.byran.tech/cdn/Cormorant_Garamond/CormorantGaramond-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: coromantGaramond-Bold;
+    src: url('https://cdn.byran.tech/cdn/Cormorant_Garamond/CormorantGaramond-Bold.ttf');
+}
+
+@font-face {
+    font-family: script;
+    src: url('./Redacted_Script/RedactedScript-Regular.ttf');
+}
