@@ -1,175 +1,168 @@
 :root {
-    --font-size: 17px;
-    --anim-dur: 0.5s;
-    --ui-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    --article-font: Noticia;
-    --dev-visibility: 1px;
+	--font-size: 17px;
+	--anim-dur: 0.5s;
+	--ui-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+		'Open Sans', 'Helvetica Neue', sans-serif;
+	--article-font: Noticia;
+	--dev-visibility: 1px;
 }
 
 * {
-    box-sizing: border-box;
-    overflow: auto;
+	box-sizing: border-box;
+	overflow: auto;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 /* ANCHOR Public Classes */
 
 .flex {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
 
 .ver-center {
-    align-items: center;
+	align-items: center;
 }
 
 .hor-center {
-    justify-content: center;
+	justify-content: center;
 }
 
 .flex-break {
-    flex-basis: 100%;
-    height: 0;
+	flex-basis: 100%;
+	height: 0;
 }
 
 .no-text-deco {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .border1 {
-    border: 1px solid blue;
-    border-width: var(--dev-visibility);
+	border: 1px solid blue;
+	border-width: var(--dev-visibility);
 }
 
 .border2 {
-    border: 1px solid red;
-    border-width: var(--dev-visibility);
+	border: 1px solid red;
+	border-width: var(--dev-visibility);
 }
 
 .border3 {
-    border: 1px solid green;
-    border-width: var(--dev-visibility);
+	border: 1px solid green;
+	border-width: var(--dev-visibility);
 }
 
 /* ANCHOR Nav Bar */
 
 nav {
-    font-family: var(--ui-font);
-    margin: 10px 0 0 0;
-    width: 100vw;
-    height: auto;
+	font-family: var(--ui-font);
+	margin: 10px 0 0 0;
+	width: 100vw;
+	height: auto;
 }
 
 hr {
-    height: 1px;
-    border-color: rgba(0, 0, 0, 0.212)
+	height: 1px;
+	border-color: rgba(0, 0, 0, 0.212);
 }
 
 .logo {
-    width: 400px;
-    height: auto;
-}
-
-.motto {
-    padding: 12px 0 12px 0;
-    font-family: coromantGaramond;
-    font-size: 22px;
+	width: 200px;
+	height: auto;
+	padding-bottom: 10px;
 }
 
 .links {
-    gap: 30px;
-    flex-basis: 100%;
-    padding: 0 0 10px 0;
+	gap: 30px;
+	flex-basis: 100%;
+	padding: 0 0 10px 0;
 }
 
 a.link {
-    color: hsl(0, 0%, 25%);
+	color: hsl(0, 0%, 25%);
 }
 
 .search-icon {
-    height: 23px;
+	height: 23px;
 }
 
 .subscribe {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin: 10px;
-    padding: 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 10px;
+	padding: 10px;
 }
 
 /* ANCHOR Article Code */
 .head-top {
-    padding: 20px 0 30px 0;
+	padding: 20px 0 30px 0;
 }
 
 .article-wrapper {
-    width: calc(200px + 60vw);
+	width: 60%;
 }
 
 .title {
-    font-family: coromantGaramond-Bold;
-    font-size: 48px;
+	font-family: coromantGaramond-Bold;
+	font-size: 48px;
 }
 
-.title~hr {
-    width: 80%;
-    margin-left: 0;
+.title ~ hr {
+	margin-left: 0;
 }
 
 .stamps {
-    padding: 10px 15px 20px;
+	padding: 10px 15px 20px;
 }
 
 .authors {
-    padding: 0 10px 0 0;
-    font-size: 18px;
-    font-family: coromantGaramond-Bold;
+	padding: 0 10px 0 0;
+	font-size: 18px;
+	font-family: coromantGaramond-Bold;
 }
 
 .date {
-    padding: 0 0 0 10px;
-    color: rgb(58, 58, 58);
-    font-family: var(--ui-font);
-    font-size: 13.5px;
+	padding: 0 0 0 10px;
+	color: rgb(58, 58, 58);
+	font-family: var(--ui-font);
+	font-size: 13.5px;
 }
 
 .actions {
-    font-family: var(--ui-font);
-    font-size: 13px;
-    gap: 25px;
-    padding-left: 15px;
+	font-family: var(--ui-font);
+	font-size: 13px;
+	gap: 25px;
+	padding-left: 15px;
 }
 
-.actions>div>svg {
-    width: 23px;
-    height: auto;
-    margin-right: 8px;
+.actions > div > svg {
+	width: 23px;
+	height: auto;
+	margin-right: 8px;
 }
 
-.print>svg {
-    stroke: #FFFFFF;
-    stroke-width: 0.8px;
+.print > svg {
+	stroke: #ffffff;
+	stroke-width: 0.8px;
 }
 
-.text>svg {
-    stroke: #FFFFFF;
-    stroke-width: 1.4px;
+.text > svg {
+	stroke: #ffffff;
+	stroke-width: 1.4px;
 }
 
-.image>img {
-    width: 50vw;
-    border-radius: 7px;
+.image > img {
+	border-radius: 7px;
 }
 
 .article {
-    padding: 30px 0 10px 0;
-    width: 80%;
-    font-family: Noticia;
-    font-size: calc(10px + 0.4vw);
+	padding: 30px 0 10px 0;
+	font-family: Noticia;
+	font-size: calc(10px + 0.4vw);
 }
