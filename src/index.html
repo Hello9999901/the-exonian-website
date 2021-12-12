@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>The Exonian Article Design</title>
 </head>
 
 <body>
     <nav class="flex hor-center ver-center">
         <a href="./index.html"><img class="logo" src="../images/exonian-logo.png" alt="The Logo of The Exonian"></a>
-        <div class="flex-break"></div>
-        <span class="motto">
-            <i>Non Sibi</i>
-        </span>
         <div class="flex-break"></div>
         <div class="links flex hor-center ver-center">
             <a href="#" class="link no-text-deco">Home</a>
@@ -29,6 +27,43 @@
         </div>
         <div class="subscribe">
             Subscribe
+        </div>
+        <div id="menuToggle" class="flex hor-center ver-center">
+            <input type="checkbox" />
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.92 26.94"
+                width="35.82" height="26.94">
+                <rect x="0.5" y="0.5" width="34.92" height="1.33"
+                    style="fill:#626262;stroke:#626262;stroke-miterlimit:10" />
+                <rect x="0.5" y="12.8" width="34.92" height="1.33"
+                    style="fill:#626262;stroke:#626262;stroke-miterlimit:10" />
+                <rect x="0.5" y="25.11" width="34.92" height="1.33"
+                    style="fill:#626262;stroke:#626262;stroke-miterlimit:10" />
+            </svg>
+            <ul id="menu">
+                <div class="menu-wrapper">
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>News</li>
+                    </a>
+                    <a href="#">
+                        <li>Life</li>
+                    </a>
+                    <a href="#">
+                        <li>Opinions</li>
+                    </a>
+                    <a href="#">
+                        <li>Sports</li>
+                    </a>
+                    <a href="#">
+                        <li>Humor</li>
+                    </a>
+                    <a href="#">
+                        <li>Archives</li>
+                    </a>
+                </div>
+            </ul>
         </div>
     </nav>
     <hr>
@@ -47,7 +82,8 @@
                     </div>
                     <div class="actions flex ver-center">
                         <div class="print flex hor-center ver-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                                fill="#000000">
                                 <path d="M0 0h24v24H0V0z" fill="none" />
                                 <path
                                     d="M19 8h-1V3H6v5H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zM8 5h8v3H8V5zm8 12v2H8v-4h8v2zm2-2v-2H6v2H4v-4c0-.55.45-1 1-1h14c.55 0 1 .45 1 1v4h-2z" />
