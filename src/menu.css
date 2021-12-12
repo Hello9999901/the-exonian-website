@@ -31,6 +31,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    visibility: hidden;
 }
 
 #menuToggle a {
@@ -77,6 +78,7 @@
     margin-top: 80px;
     width: 100vw;
     padding: 50px;
+    padding-top: 0px;
     height: 100vh;
     background-color: rgb(255, 255, 255);
     list-style-type: none;
@@ -89,15 +91,15 @@
     transform-origin: 0% 0%;
     transform: translate(100%, 0);
 
-    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 
-    transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    transition: -webkit-transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 
-    -o-transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    -o-transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1.0), -webkit-transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
 #menu li {
@@ -115,5 +117,22 @@
 #menuToggle input:checked~#menu {
     transform: translate(0px) !important;
     animation: fadeIn;
-    animation-duration: 0.5s;
+    animation-duration: 0.4s;
+}
+
+
+#menuToggle input:checked~#menu>.menu-wrapper {
+    transform: translate(0px) !important;
+    animation: slideInRight;
+    animation-delay: 0.1s;
+    animation-duration: 0.4s;
+}
+
+#menu>.menu-wrapper>a>li {
+    opacity: 0;
+    transition-delay: 0.1s;
+}
+
+#menuToggle input:checked~#menu>.menu-wrapper>a>li {
+    opacity: 1;
 }

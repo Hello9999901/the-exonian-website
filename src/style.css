@@ -80,6 +80,11 @@ hr {
     height: auto;
     padding: 12px 0 30px 0;
     animation: fadeInDown var(--anim-dur);
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .links {
@@ -193,22 +198,41 @@ a.link:hover {
         width: 50vw;
         padding: 9px 0 12px 0;
     }
+
     .links {
         display: none;
     }
+
     .content {
         margin: 0 15px;
     }
+
     .title {
         font-size: 30px;
     }
+
     .authors {
         font-size: 13.5px;
     }
+
     .date {
+        padding-top: 4px;
         font-size: 12px;
     }
+
     .subscribe {
         display: none;
+    }
+
+    #menuToggle {
+        visibility: visible !important;
+    }
+
+    .dash {
+        opacity: 0;
+    }
+
+    .title {
+        font-size: 27px;
     }
 }
