@@ -129,33 +129,45 @@ a.link:hover {
     gap: 0px 0px;
     grid-auto-flow: column;
     grid-template-areas:
-        "side-articles main-news opinions"
-        "side-articles more-articles opinions";
+        "side-articles main-news right-col"
+        "side-articles more-articles right-col";
     width: 90%;
     max-width: 1500px;
+    padding-top: 15px;
 }
 
 .center-channel {
     padding: 0 20px;
 }
 
-.opinions {
-    grid-area: opinions;
+.right-col {
+    grid-area: right-col;
     border-left: 1px solid var(--accent-light);
     padding-left: 20px;
 }
 
-.opinions::before {
-    content: 'Opinions';
+.right-col::before {
+    content: attr(id);
+    text-transform: capitalize;
     font-family: var(--ui-font);
-    font-weight: bold;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: overline;
+}
+
+.right-col .article-block:first-child {
+    padding-top: 0px;
 }
 
 .side-articles {
     grid-area: side-articles;
     border-right: 1px solid var(--accent-light);
     padding-right: 20px;
+}
+
+/* Get no top padding on first child but have padding on next ones */
+.side-articles .article-block:first-child{
+    padding-top: 0px;
 }
 
 .main-news {
@@ -214,6 +226,37 @@ a.link:hover {
     border: 0.5px solid var(--accent-light);
     width: 100%;
     margin: 0;
+}
+
+/* ANCHOR Hero Code */
+hero {
+    width: 100vw;
+    height: calc(100vh + 2px);
+    margin: 40px 0;
+    background: url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.darken {
+    background-color: rgba(46, 46, 46, 0.5); /* Tint color */
+    background-blend-mode: multiply;
+  }
+
+hero .text {
+    font-family: coromantGaramond-Bold;
+    font-size: 50px;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+    margin-left: 50px;
+    margin-bottom: 150px;
+    border-bottom: 1px solid white;
+    transition: 0.5s;
+    scale: 1.0;
+}
+
+hero .text:hover {
+    scale: 1.03;
 }
 
 /* ANCHOR Article Code */
