@@ -121,6 +121,91 @@ a.link:hover {
     padding: 10px;
 }
 
+/* ANCHOR Footer Code */
+footer {
+    background-color: rgb(10, 10, 10);
+    height: 250px;
+    position: relative;
+}
+
+footer span {
+    font-family: coromantGaramond;
+    font-size: 50px;
+    color: white;
+}
+
+footer .newsletter-subscribe {
+    padding-left: 50px;
+}
+
+footer .newsletter-subscribe input {
+    font-size: 13px;
+    font-family: coromantGaramond;
+}
+
+footer .newsletter-subscribe button {
+    width: fit-content;
+    height: 100%;
+    padding: 6px;
+    margin-left: 10px;
+    background-color: rgba(0, 0, 255, 0);
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 0px;
+    transition: 0.2s;
+}
+
+footer .newsletter-subscribe button:hover {
+    color: rgb(10, 10, 10);
+    background-color: white;
+    scale: 1.05;
+}
+
+footer .contact {
+    position: absolute;
+    right: 20px;
+    padding: 10px;
+    width: max-content;
+    height: 200px;
+}
+
+footer .contact img {
+    color: white;
+    filter: invert(1);
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 0;
+}
+
+footer .contact .wrapper {
+    padding-top: 15px;
+}
+
+footer .contact p {
+    font-size: 15px;
+    color: white;
+    text-align: right;
+    font-family: coromantGaramond;
+}
+
+footer .contact .facebook {
+    margin-right: 35px;
+    width: 26px;
+    height: 26px;
+}
+
+footer .copyright {
+    border-top: 0.5px solid #FFFFFF;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    margin-left: 50px;
+    font-family: coromantGaramond;
+    font-size: 17px;
+}
+
 /* ANCHOR Main Page Code */
 .main-page {
     display: grid;
