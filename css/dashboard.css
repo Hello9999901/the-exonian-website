@@ -1,0 +1,204 @@
+:root {
+    --font-size: 17px;
+    --anim-dur: 1.3s;
+    --ui-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --article-font: Noticia;
+    --dev-visibility: 1px;
+    --accent-dark: rgb(68, 68, 68);
+    --accent-light: rgb(224, 224, 224);
+}
+
+* {
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+body {
+    width: 90vw;
+    margin: auto;
+    margin-top: 30px;
+    max-width: 1800px;
+    font-family: var(--ui-font);
+}
+
+/* ANCHOR Public Classes */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 100vw;
+}
+
+.ver-center {
+    align-items: center;
+}
+
+.hor-center {
+    justify-content: center;
+}
+
+.flex-break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.no-text-deco {
+    text-decoration: none;
+}
+
+.border1 {
+    border: 1px solid rgba(0, 0, 255, 0.5);
+    border-width: var(--dev-visibility);
+}
+
+.border2 {
+    border: 1px solid rgba(255, 0, 0, 0.479);
+    border-width: var(--dev-visibility);
+}
+
+.border3 {
+    border: 1px solid rgba(0, 128, 0, 0.452);
+    border-width: var(--dev-visibility);
+}
+
+/* ANCHOR Dashboard Style */
+.logo {
+    width: 350px;
+    height: auto;
+}
+
+.logo-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    font-family: coromantGaramond;
+    font-size: 40px;
+}
+
+.create-new-article-group {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    padding: 15px;
+    font-weight: 500;
+    transition: 0.5s;
+    border-radius: 42px;
+    background: #f8f8f8;
+    box-shadow: 5px 5px 10px #dbdbdb,
+        -5px -5px 10px #ffffff;
+}
+
+.create-new-article-group:hover {
+    background-color: #2EE59D;
+    -webkit-box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    -webkit-transform: translateY(-7px);
+    -ms-transform: translateY(-7px);
+    transform: translateY(-7px);
+}
+
+.create-new-article-group:hover a {
+    color: #fff;
+}
+
+.create-new-article-group a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-family: coromantGaramond;
+    font-size: 30px;
+}
+
+tr a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+    background: hsl(0, 0%, 99%);
+    box-shadow: 5px 5px 10px #ececec,
+        -5px -5px 10px #ffffff;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    font-size: 23px;
+    font-family: coromandGaramond-SemiBold;
+}
+
+td {
+    font-size: 17px;
+}
+
+td,
+th {
+    border-bottom: 1px solid #DDDDDD;
+    text-align: left;
+    padding: 18px;
+}
+
+/* ANCHOR Login Style */
+.login-wrapper form {
+    padding-bottom: 50px;
+    padding-left: 20px;
+}
+
+.login-wrapper button {
+    padding: 1.3em 3em;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.login-wrapper button:hover {
+    background-color: #2EE59D;
+    -webkit-box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    -webkit-transform: translateY(-7px);
+    -ms-transform: translateY(-7px);
+    transform: translateY(-7px);
+}
+
+.login-wrapper button:active {
+    -webkit-transform: translateY(-1px);
+    -ms-transform: translateY(-1px);
+    transform: translateY(-1px);
+}
+
+.login-wrapper label {
+    font-size: 21px;
+}
+
+.login-wrapper input {
+    font-size: 14px;
+    border: 1px solid #c8c8c8b0;
+    border-radius: 50px;
+    margin: 20px 0;
+    padding: 3px 20px;
+    transition: 0.2s;
+}
+
+.login-wrapper input:focus {
+    outline: none;
+    box-shadow:  9px 9px 25px #e6e6e6,
+                 -9px -9px 25px #f4f4f4;
+}

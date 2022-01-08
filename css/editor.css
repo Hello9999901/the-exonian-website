@@ -1,0 +1,239 @@
+:root {
+    --font-size: 17px;
+    --anim-dur: 1.3s;
+    --ui-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --article-font: Noticia;
+    --dev-visibility: 1px;
+    --accent-dark: rgb(68, 68, 68);
+    --accent-light: rgb(224, 224, 224);
+}
+
+* {
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+body {
+    width: 90vw;
+    padding: 20px;
+    margin: auto;
+    margin-top: 30px;
+    max-width: 1800px;
+    font-family: var(--ui-font);
+}
+
+/* ANCHOR Public Classes */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 100vw;
+}
+
+.ver-center {
+    align-items: center;
+}
+
+.hor-center {
+    justify-content: center;
+}
+
+.flex-break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.no-text-deco {
+    text-decoration: none;
+}
+
+.border1 {
+    border: 1px solid rgba(0, 0, 255, 0.5);
+    border-width: var(--dev-visibility);
+}
+
+.border2 {
+    border: 1px solid rgba(255, 0, 0, 0.479);
+    border-width: var(--dev-visibility);
+}
+
+.border3 {
+    border: 1px solid rgba(0, 128, 0, 0.452);
+    border-width: var(--dev-visibility);
+}
+
+/* ANCHOR Editor Style */
+.logo {
+    width: 350px;
+    height: auto;
+}
+
+.logo-wrapper {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.form-control {
+    margin: 15px 0;
+    border: none;
+}
+
+.form-control:focus {
+    border-color: rgba(0, 0, 0, 0) !important;
+    background: none;
+}
+
+.title-entry {
+    width: 100%;
+    border: none;
+    height: 50px;
+    font-size: 30px;
+    font-family: coromantGaramond;
+}
+
+.title-entry:focus {
+    outline: none;
+}
+
+.note-editor .note-toolbar,
+.note-popover .popover-content {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 20px !important;
+}
+
+.note-btn {
+    border: none;
+}
+
+.note-editor.note-airframe,
+.note-editor.note-frame {
+    border: none;
+}
+
+.btn-group {
+    border-radius: 39px;
+    background: #f2f2f2;
+    box-shadow: 6px 6px 12px #dadada,
+        -6px -6px 12px #ffffff;
+}
+
+.note-editor.note-airframe .note-statusbar,
+.note-editor.note-frame .note-statusbar {
+    display: none;
+}
+
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.bottom-button {
+    position: fixed;
+    bottom: 30px;
+    width: 50%;
+}
+
+.return {
+    width: fit-content;
+    padding: 1.3em 3em;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+.return a {
+    color: #000;
+    text-decoration: none;
+}
+
+.return:hover a {
+    color: white;
+    text-decoration: none;
+}
+
+.return:hover {
+    background-color: #6aaaff;
+    -webkit-box-shadow: 0px 15px 20px rgba(102, 175, 235, 0.4);
+    box-shadow: 0px 15px 20px rgba(87, 166, 230, 0.4);
+    color: #fff;
+    -webkit-transform: translateY(-7px);
+    -ms-transform: translateY(-7px);
+    transform: translateY(-7px);
+}
+
+/* ANCHOR New Button */
+button.hover-button {
+    padding: 1.3em 3em;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+button.hover-button:hover {
+    background-color: #2EE59D;
+    -webkit-box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    -webkit-transform: translateY(-7px);
+    -ms-transform: translateY(-7px);
+    transform: translateY(-7px);
+}
+
+button.hover-button:active {
+    -webkit-transform: translateY(-1px);
+    -ms-transform: translateY(-1px);
+    transform: translateY(-1px);
+}
+
+/* ANCHOR Create Group */
+.create-group-text {
+    min-width: 50%;
+    margin: 10px 0;
+}
+
+.hover-button-wrapper {
+    padding: 20px 0;
+}
+
+.form-group input {
+    font-size: 14px;
+    border: 1px solid #c8c8c8b0;
+    border-radius: 50px;
+    margin: 20px 0;
+    padding: 3px 20px;
+    transition: 0.2s;
+}
+
+.form-group input:focus {
+    outline: none;
+    box-shadow:  9px 9px 25px #e6e6e6,
+                 -9px -9px 25px #f4f4f4;
+}
+
+
+.form-group {
+    padding-left: 20px;
+}

@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/css/editor.css" />
+
+<body>
+        <div class="logo-wrapper flex hor-center ver-center"><img class="logo" src="./images/exonian-logo.png"
+                        alt="The Logo of The Exonian"></div>
+
+        <form action="/admin/createGroup" method="post">
+                <h1>Create Working Group</h1>
+                <div class="form-group"><label for="username">Group Name: </label>
+                        <br>
+                        <input class="create-group-text" id="articleName" type="text" name="username"
+                                placeholder="Enter the group name, preferably without spaces and special characters" />
+                </div>
+                <div class="form-group"><label for="articleName">Article Name: </label>
+                        <br>
+                        <input class="create-group-text" id="articleName" type="text" name="title"
+                                placeholder="Enter article name" /></div>
+                <div class="form-group"><label for="authors">Authors: </label>
+                        <br>
+                        <input class="create-group-text" id="authors" type="text" name="authors"
+                                placeholder="Enter authors here, separated by comma" /></div>
+                <div class="form-group"><label for="password">Password: </label>
+                        <br>
+                        <input class="create-group-text" id="authors" type="text" name="password"
+                                placeholder="Enter the group password" />
+                </div>
+                <div class="hover-button-wrapper form-group"><button class="hover-button" type="submit">Create</button></div>
+        </form>
+</body>
