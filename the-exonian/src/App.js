@@ -9,14 +9,14 @@ function Nav() {
 			</div>
 			<hr className="border-gray-300"></hr>
 			<div className="flex flex-row justify-center py-2 font-normal text-sm">
-				<a href="https://www.google.com" className="px-5">About</a>
-				<a href="https://www.google.com" className="px-5">News</a>
-				<a href="https://www.google.com" className="px-5">Life</a>
-				<a href="https://www.google.com" className="px-5">Opinions</a>
-				<a href="https://www.google.com" className="px-5">Sports</a>
-				<a href="https://www.google.com" className="px-5">Humor</a>
-				<a href="https://www.google.com" className="px-5">Archives</a>
-				<a href="https://www.google.com" className="px-5">Opinions</a>
+				<a href="https://www.google.com" className="mx-5">About</a>
+				<a href="https://www.google.com" className="mx-5">News</a>
+				<a href="https://www.google.com" className="mx-5">Life</a>
+				<a href="https://www.google.com" className="mx-5">Opinions</a>
+				<a href="https://www.google.com" className="mx-5">Sports</a>
+				<a href="https://www.google.com" className="mx-5">Humor</a>
+				<a href="https://www.google.com" className="mx-5">Archives</a>
+				<a href="https://www.google.com" className="mx-5">Opinions</a>
 			</div>
 		</div>
 	);
