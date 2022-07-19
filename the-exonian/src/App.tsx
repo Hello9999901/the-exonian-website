@@ -48,7 +48,7 @@ function Grid() {
 	);
 }
 
-function ArticleLink(input) {
+function ArticleLink(input: any) {
 	return (
 		<div>
 			<h1 className="text-4xl font-serif font-semibold">{input.title}</h1>
