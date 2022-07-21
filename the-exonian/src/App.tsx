@@ -31,16 +31,15 @@ function Sublinks() {
 
 function Grid() {
 	return (
-		<div className="grid gap-4 grid-cols-12 h-fit max-w-[1200px] w-11/12 py-2 relative">
+		<div className="grid gap-5 grid-cols-12 h-full max-w-[1270px] w-11/12 relative">
 			<div className="col-start-4 col-end-10 row-start-1 row-end-3">
-				<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt=""/>
+				<ArticleLink title="When You Realize Talking is More Than Speaking" author="Byran Huang" link="https://www.google.com" alt="People Talking" img="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"></ArticleLink>
+			</div>
+			<div className="col-start-1 col-end-4 pr-4 border-r">
+				<ArticleLink title="When You Realize Talking is More Than Speaking" author="Byran Huang" link="https://www.google.com"></ArticleLink>
 				<ArticleLink title="When You Realize Talking is More Than Speaking" author="Byran Huang" link="https://www.google.com"></ArticleLink>
 			</div>
-			<div className="col-start-1 col-end-4">
-				<ArticleLink title="When You Realize Talking is More Than Speaking" author="Byran Huang" link="https://www.google.com"></ArticleLink>
-				<ArticleLink title="When You Realize Talking is More Than Speaking" author="Byran Huang" link="https://www.google.com"></ArticleLink>
-			</div>
-			<div className="col-start-10 col-end-13">
+			<div className="col-start-10 col-end-13 pl-4 border-l">
 				<ArticleLink title="When You Realize Talking is More Than Speaking" author="Byran Huang" link="https://www.google.com"></ArticleLink>
 				<ArticleLink title="When You Realize Talking is More Than Speaking" author="Byran Huang" link="https://www.google.com"></ArticleLink>
 			</div>
@@ -48,11 +47,21 @@ function Grid() {
 	);
 }
 
+function Hero() {
+	return (
+		<div className="">
+			<img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8" alt="" className="h-screen w-screen"/>
+		</div>
+	);
+}
+
 function ArticleLink(input: any) {
 	return (
-		<div>
+		<div className="py-2">
+			<img src={input.img} alt={input.alt}/>
 			<a href={input.link} className="text-4xl font-serif font-semibold hover:text-neutral-600 ease-in-out duration-200">{input.title}</a>
-			<p>By: {input.author}</p>
+			<p className="pb-5">By: {input.author}</p>
+			<hr/>
 		</div>
 	);
 }
