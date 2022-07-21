@@ -49,8 +49,31 @@ function Grid() {
 
 function Hero() {
 	return (
-		<div className="">
+		<div className="py-5">
 			<img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8" alt="" className="h-screen w-screen"/>
+		</div>
+	);
+}
+
+function Footer() {
+	return (
+		<div className="mt-16 h-64 w-screen bg-black absolute b-0 text-white items-center px-10 flex">
+			<div className="flex flex-col">
+				<h1 className="font-serif text-5xl py-2">Subscribe to our newsletter.</h1>
+				<div>
+					<input type="email" autoComplete="email" placeholder="E-Mail Address" className="text-gray-700 duration-300 ease-in-out" />
+					<button className="border-2 border-white mx-5 p-1 hover:bg-white hover:text-black hover:scale-105 duration-300 ease-in-out">Sign Up</button>
+				</div>
+			</div>
+			<div className="absolute w-auto h-max right-0 px-10 text-right font-serif">
+				<h1 className="font-bold">Contact Us:</h1>
+				<p>20 Main Street, Exeter, New Hampshire 03833</p>
+				<div className="flex justify-end items-center py-2">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Instagram_font_awesome.svg" alt="" className="invert w-9 h-9 mx-1" />
+					<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Facebook_icon_%28black%29.svg" alt="" className="invert w-8 h-8 mx-1" />
+				</div>
+			</div>
+            <p className="absolute bottom-0 p-2 border-t">2022 © The Exonian. All Rights Reserved. New Website Preview - Development Purposes Only. Designed By Byran Huang '25, (Tailwind CSS + React JS Experimental Branch)</p>
 		</div>
 	);
 }
@@ -72,7 +95,10 @@ function App() {
 			<Nav></Nav>
 			<div className="flex flex-col items-center">
 				<Grid></Grid>
+				<Hero></Hero>
+				<Grid></Grid>
 			</div>
+			<Footer></Footer>
 		</div>
 	);
 }
