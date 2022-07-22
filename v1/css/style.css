@@ -326,7 +326,7 @@ hero {
 .darken {
     background-color: rgba(46, 46, 46, 0.5); /* Tint color */
     background-blend-mode: multiply;
-  }
+}
 
 hero .text {
     font-family: coromantGaramond-Bold;

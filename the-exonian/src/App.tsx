@@ -31,7 +31,7 @@ function Sublinks() {
 
 function Grid() {
 	return (
-		<div className="grid gap-5 grid-cols-12 h-full max-w-[1270px] w-11/12 relative">
+		<div className="grid gap-5 grid-cols-12 h-fit max-w-[1270px] w-11/12 relative">
 			<div className="col-start-4 col-end-10 row-start-1 row-end-3">
 				<ArticleLink title="When You Realize Talking is More Than Speaking" author="Byran Huang" link="https://www.google.com" alt="People Talking" img="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"></ArticleLink>
 			</div>
@@ -47,10 +47,12 @@ function Grid() {
 	);
 }
 
-function Hero() {
+function Hero(prop: any) {
 	return (
-		<div className="py-5">
-			<img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8" alt="" className="h-screen w-screen"/>
+		<div className="h-screen w-screen my-5 flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8')] bg-cover darken">
+			<a href="https://www.google.com">
+				<h1 className="text-6xl font-serif text-white underline underline-offset-8 decoration-2 hover:text-neutral-200 duration-300 ease-in-out">How To Become A Better Studier</h1>
+			</a>
 		</div>
 	);
 }
@@ -62,15 +64,15 @@ function Footer() {
 				<h1 className="font-serif text-5xl py-2">Subscribe to our newsletter.</h1>
 				<div>
 					<input type="email" autoComplete="email" placeholder="E-Mail Address" className="text-gray-700 duration-300 ease-in-out" />
-					<button className="border-2 border-white mx-5 p-1 hover:bg-white hover:text-black hover:scale-105 duration-300 ease-in-out">Sign Up</button>
+					<button className="border-2 border-white mx-5 p-1 hover:bg-white hover:text-black hover:scale-105 duration-200 ease-in-out active:scale-95">Sign Up</button>
 				</div>
 			</div>
 			<div className="absolute w-auto h-max right-0 px-10 text-right font-serif">
 				<h1 className="font-bold">Contact Us:</h1>
 				<p>20 Main Street, Exeter, New Hampshire 03833</p>
 				<div className="flex justify-end items-center py-2">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Instagram_font_awesome.svg" alt="" className="invert w-9 h-9 mx-1" />
-					<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Facebook_icon_%28black%29.svg" alt="" className="invert w-8 h-8 mx-1" />
+					<a href="https://www.instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Instagram_font_awesome.svg" alt="" className="invert w-9 h-9 mx-1" /></a>
+					<a href="https://www.facebook.com"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Facebook_icon_%28black%29.svg" alt="" className="invert w-8 h-8 mx-1" /></a>
 				</div>
 			</div>
             <p className="absolute bottom-0 p-2 border-t">2022 © The Exonian. All Rights Reserved. New Website Preview - Development Purposes Only. Designed By Byran Huang '25, (Tailwind CSS + React JS Experimental Branch)</p>

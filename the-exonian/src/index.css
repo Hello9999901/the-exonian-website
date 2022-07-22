@@ -35,3 +35,7 @@ a.ul-hover {
   color: inherit;
   line-height: 1;
 }
+.darken {
+  background-color: rgba(46, 46, 46, 0.3); /* Tint color */
+  background-blend-mode: multiply;
+}
